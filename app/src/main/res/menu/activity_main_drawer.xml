@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_pdf"
+            android:title="@string/menu_events" />
+        <item
+            android:id="@+id/nav_documents"
+            android:icon="@drawable/ic_pdf"
+            android:title="@string/menu_documents" />
+        <item
+            android:id="@+id/nav_ebooks"
+            android:icon="@drawable/ic_pdf"
+            android:title="@string/menu_ebooks" />
+        <item
+            android:id="@+id/nav_earticles"
+            android:icon="@drawable/ic_pdf"
+            android:title="@string/menu_earticles" />
+
+        <item
+            android:id="@+id/nav_eqbooks"
+            android:icon="@drawable/ic_pdf"
+            android:title="@string/menu_eqbooks" />
+    </group>
+
+    <item android:title="About Us">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info"
+                android:title="@string/menu_about" />
+
+        </menu>
+    </item>
+
+</menu>

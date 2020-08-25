@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.madhumankatha.kuvempuuniv.fragment.HomeFragment"
+        android:label="Events"
+        tools:layout="@layout/recyclerview" >
+        <action
+            android:id="@+id/action_homeFragment_to_eventDetailsFragment"
+            app:destination="@id/eventDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.madhumankatha.kuvempuuniv.fragment.EventDetailsFragment"
+        android:label="EventDetailsFragment" />
+    <fragment
+        android:id="@+id/docsFragment"
+        android:name="com.madhumankatha.kuvempuuniv.fragment.DocsFragment"
+        android:label="Documents"
+        tools:layout="@layout/recyclerview" >
+        <action
+            android:id="@+id/action_docsFragment_to_docsDetailsFragment"
+            app:destination="@id/docsDetailsFragment"
+            app:popUpTo="@+id/docsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/docsDetailsFragment"
+        android:name="com.madhumankatha.kuvempuuniv.fragment.DocsDetailsFragment"
+        android:label="eventdetails"
+        tools:layout="@layout/docs_fragment" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.madhumankatha.kuvempuuniv.fragment.AboutFragment"
+        android:label="About Us"
+        tools:layout="@layout/about_fragment" />
+</navigation>
